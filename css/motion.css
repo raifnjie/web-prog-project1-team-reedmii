@@ -24,7 +24,12 @@
       to { transform: scaleY(1); }
     }
   
-    /* TODO (teammate): add keyframe animation #2 here, the active checkpoint pulse */
+    /* 2. Active checkpoint pulse: the current marker gently grows and shrinks */
+    .is-active .marker { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+    }
   
     /* 3. Hero emblem float */
     .hero-emblem { animation: float 6s ease-in-out infinite; }

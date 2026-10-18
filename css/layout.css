@@ -28,7 +28,13 @@
   .hero-emblem { width: 12rem; }
 }
 
-/* TODO (teammate): add the @media (min-width: 700px) tablet breakpoint here */
+/* Tablet: two-column hero, three feature cards, two-column map and team */
+@media (min-width: 700px) {
+  .hero .container { grid-template-columns: 2fr 1fr; }
+  .features { grid-template-columns: repeat(3, 1fr); }
+  .map-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
 
 @media (min-width: 1024px) {
   .map-grid { grid-template-columns: repeat(3, 1fr); }
