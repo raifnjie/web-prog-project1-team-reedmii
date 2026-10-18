@@ -24,12 +24,7 @@
       to { transform: scaleY(1); }
     }
   
-    /* 2. Active checkpoint pulse */
-    .is-active .marker { animation: pulse 2s ease-in-out infinite; }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.18); }
-    }
+    /* TODO (teammate): add keyframe animation #2 here, the active checkpoint pulse */
   
     /* 3. Hero emblem float */
     .hero-emblem { animation: float 6s ease-in-out infinite; }
