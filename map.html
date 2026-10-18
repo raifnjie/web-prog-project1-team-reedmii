@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quest Explorer | World Map</title>
+  <meta name="description" content="Choose a region of Aeloria and compare difficulty and progress.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Quest Explorer</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html" aria-current="page">World Map</a></li>
+          <li><a href="mission.html">Mission Detail</a></li>
+          <li><a href="about.html">Team/About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="map-title">
+      <div class="container">
+        <h1 id="map-title">World Map of Aeloria</h1>
+        <p class="lead">Six regions, six missions. Pick one to see its objectives and route.</p>
+
+        <div class="map-grid">
+          <article class="card">
+            <h2>Emberwood Forest</h2>
+            <div class="region-meta">
+              <span class="badge badge-easy">Easy</span>
+              <span class="status status-complete">&#10003; Complete</span>
+            </div>
+            <p>Whispering trees and lantern-lit paths mark the start of your journey.</p>
+            <a class="card-link" href="mission.html">View mission: Emberwood Forest</a>
+          </article>
+
+          <article class="card">
+            <h2>Silverbrook Village</h2>
+            <div class="region-meta">
+              <span class="badge badge-easy">Easy</span>
+              <span class="status status-active">&#9733; Active</span>
+            </div>
+            <p>A trading town with a missing relic and many secrets.</p>
+            <a class="card-link" href="mission.html">View mission: Silverbrook Village</a>
+          </article>
+
+          <article class="card">
+            <h2>Gloamfen Marsh</h2>
+            <div class="region-meta">
+              <span class="badge badge-medium">Medium</span>
+              <span class="status status-locked">&#128274; Locked</span>
+            </div>
+            <p>Foggy wetlands where the path shifts under your feet.</p>
+            <a class="card-link" href="mission.html">View mission: Gloamfen Marsh</a>
+          </article>
+
+          <article class="card">
+            <h2>Ironpeak Mountains</h2>
+            <div class="region-meta">
+              <span class="badge badge-medium">Medium</span>
+              <span class="status status-locked">&#128274; Locked</span>
+            </div>
+            <p>Dwarven forges and wind-cut cliffs guard the high pass.</p>
+            <a class="card-link" href="mission.html">View mission: Ironpeak Mountains</a>
+          </article>
+
+          <article class="card">
+            <h2>Sunscorch Desert</h2>
+            <div class="region-meta">
+              <span class="badge badge-hard">Hard</span>
+              <span class="status status-locked">&#128274; Locked</span>
+            </div>
+            <p>Buried ruins and scorching dunes hide the oldest checkpoint.</p>
+            <a class="card-link" href="mission.html">View mission: Sunscorch Desert</a>
+          </article>
+
+          <article class="card">
+            <h2>Crystal Spire</h2>
+            <div class="region-meta">
+              <span class="badge badge-hard">Hard</span>
+              <span class="status status-locked">&#128274; Locked</span>
+            </div>
+            <p>The final tower. Only those with every badge may enter.</p>
+            <a class="card-link" href="mission.html">View mission: Crystal Spire</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">World Map</a></li>
+          <li><a href="mission.html">Mission Detail</a></li>
+          <li><a href="about.html">Team/About</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 Quest Explorer. CSC 4370/6370 Project 1.</p>
+    </div>
+  </footer>
+</body>
+</html>
