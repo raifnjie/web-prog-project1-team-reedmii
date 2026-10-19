@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quest Explorer | Team/About</title>
+  <meta name="description" content="The team, story, and design decisions behind Quest Explorer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Quest Explorer</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">World Map</a></li>
+          <li><a href="mission.html">Mission Detail</a></li>
+          <li><a href="about.html" aria-current="page">Team/About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <section aria-labelledby="about-title">
+        <h1 id="about-title">About the Team</h1>
+        <p class="lead">Quest Explorer is a static HTML and CSS project for CSC 4370/6370 (Track B, Adventure Pack).</p>
+        <div class="team-grid">
+          <article class="card">
+            <h2>Raif Njie</h2>
+            <p>Page structure, home and about layouts, transitions and transforms, accessibility checks.</p>
+          </article>
+          <article class="card">
+            <h2>Michael Tewabe</h2>
+            <p>Design system, map and mission layouts, keyframe animations, responsive testing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="story-title">
+        <h2 id="story-title">Project story</h2>
+        <p>We wanted a first portfolio project that feels like a journey, not a list of pages. The map, mission, and route pages show progress at a glance.</p>
+      </section>
+
+      <section aria-labelledby="design-title">
+        <h2 id="design-title">Design decisions</h2>
+        <ul>
+          <li>Semantic landmarks, one h1 per page, and a skip link on every page.</li>
+          <li>Status is always shown with an icon and a text label, never color alone.</li>
+          <li>Transforms instead of top or margin, so hover effects never shift the layout.</li>
+          <li>All animations are wrapped in a prefers-reduced-motion check.</li>
+          <li>The checkpoint route is an ordered list, because the order matters.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="tools-title">
+        <h2 id="tools-title">Tools used</h2>
+        <p>VS Code, Git and GitHub, Chrome DevTools, the W3C validators, and Google Fonts (Cinzel and Inter).</p>
+        <p><a class="btn btn-outline" href="https://github.com/raifnjie/web-prog-project1-team-reedmii/tree/main">View the GitHub repository</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">World Map</a></li>
+          <li><a href="mission.html">Mission Detail</a></li>
+          <li><a href="about.html">Team/About</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 Quest Explorer | Web Programming | Project 1</p>
+    </div>
+  </footer>
+</body>
+</html>

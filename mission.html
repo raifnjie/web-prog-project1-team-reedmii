@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quest Explorer | Mission Detail</title>
+  <meta name="description" content="Mission objectives, rewards, and the checkpoint route for Silverbrook Village.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Quest Explorer</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">World Map</a></li>
+          <li><a href="mission.html" aria-current="page">Mission Detail</a></li>
+          <li><a href="about.html">Team/About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <section aria-labelledby="mission-title">
+        <h1 id="mission-title">Mission: The Silverbrook Relic</h1>
+        <p class="lead">Recover the stolen Silver Lantern before the harvest festival ends.</p>
+        <div class="region-meta">
+          <span class="badge badge-easy">Easy</span>
+          <span class="status status-active">&#9733; Active</span>
+        </div>
+      </section>
+
+      <div class="mission-layout">
+        <div>
+          <section aria-labelledby="obj-title">
+            <h2 id="obj-title">Objectives</h2>
+            <ul>
+              <li>Speak with the innkeeper about the theft.</li>
+              <li>Find three clues around the village.</li>
+              <li>Confront the thief at the old mill.</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="rew-title">
+            <h2 id="rew-title">Rewards</h2>
+            <ul>
+              <li>Silver Lantern (key item)</li>
+              <li>150 gold coins</li>
+              <li>Village Friend badge</li>
+            </ul>
+          </section>
+
+          <div class="mission-links">
+            <a class="btn btn-outline" href="map.html">Back to Map</a>
+            <a class="btn" href="mission.html">Next mission: Gloamfen Marsh</a>
+          </div>
+        </div>
+
+        <section id="route" aria-labelledby="route-title">
+          <h2 id="route-title">Checkpoint Route</h2>
+          <ol class="timeline">
+            <li class="checkpoint is-complete">
+              <span class="marker" aria-hidden="true">&#10003;</span>
+              <span class="status status-complete">&#10003; Complete</span>
+              <h3>1. Village Gate</h3>
+              <p>You arrived and met the guard.</p>
+            </li>
+            <li class="checkpoint is-complete">
+              <span class="marker" aria-hidden="true">&#10003;</span>
+              <span class="status status-complete">&#10003; Complete</span>
+              <h3>2. The Inn</h3>
+              <p>The innkeeper shared what she saw.</p>
+            </li>
+            <li class="checkpoint is-active">
+              <span class="marker" aria-hidden="true">&#9733;</span>
+              <span class="status status-active">&#9733; Active</span>
+              <h3>3. Clue Hunt</h3>
+              <p>Find three clues around the market square.</p>
+            </li>
+            <li class="checkpoint is-locked">
+              <span class="marker" aria-hidden="true">&#128274;</span>
+              <span class="status status-locked">&#128274; Locked</span>
+              <h3>4. The Old Mill</h3>
+              <p>Unlocks after all clues are found.</p>
+            </li>
+            <li class="checkpoint is-locked">
+              <span class="marker" aria-hidden="true">&#128274;</span>
+              <span class="status status-locked">&#128274; Locked</span>
+              <h3>5. Festival Square</h3>
+              <p>Return the lantern and claim your reward.</p>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">World Map</a></li>
+          <li><a href="mission.html">Mission Detail</a></li>
+          <li><a href="about.html">Team/About</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 Quest Explorer | Web Programming | Project 1</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* Mobile-first. Breakpoints: 480, 700, 1024 */
+
+/* ===== SHARED ===== */
+.lead { font-size: 1.2rem; color: var(--muted); max-width: 40rem; }
+.stack > * + * { margin-top: var(--space-2); }
+
+/* ===== HOME ===== */
+.hero .container {
+  display: grid;
+  gap: var(--space-4);
+  align-items: center;
+}
+.hero-emblem { width: 10rem; justify-self: center; color: var(--gold); }
+.features { display: grid; gap: var(--space-3); }
+
+/* ===== MAP ===== */
+.map-grid { display: grid; gap: var(--space-3); grid-template-columns: 1fr; }
+.region-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: var(--space-1); }
+
+/* ===== MISSION ===== */
+.mission-layout { display: grid; gap: var(--space-4); }
+.mission-links { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-3); }
+
+/* ===== ABOUT ===== */
+.team-grid { display: grid; gap: var(--space-3); }
+
+@media (min-width: 480px) {
+  .hero-emblem { width: 12rem; }
+}
+
+/* Tablet: two-column hero, three feature cards, two-column map and team */
+@media (min-width: 700px) {
+  .hero .container { grid-template-columns: 2fr 1fr; }
+  .features { grid-template-columns: repeat(3, 1fr); }
+  .map-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .map-grid { grid-template-columns: repeat(3, 1fr); }
+  .mission-layout { grid-template-columns: 1fr 1.4fr; align-items: start; }
+  .hero-emblem { width: 16rem; }
+}

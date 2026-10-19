@@ -1,0 +1,34 @@
+:root {
+    /* Colors (text on bg is about 15:1, muted about 8:1, gold on bg about 10:1) */
+    --bg: #14121f;
+    --surface: #1f1b33;
+    --surface-2: #2a2545;
+    --text: #f3efe4;
+    --muted: #c4bfd6;
+    --gold: #f2c14e;
+    --teal: #5ad1c0;
+    --danger: #ff9b8a;
+    --line: #4a4370;
+    --on-accent: #14121f;
+  
+    /* Type */
+    --font-display: "Cinzel", Georgia, serif;
+    --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+    --fs-body: 1.0625rem;
+    --fs-h1: clamp(2rem, 6vw, 3.5rem);
+    --fs-h2: clamp(1.5rem, 4vw, 2.25rem);
+    --fs-h3: 1.25rem;
+  
+    /* Spacing */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2.5rem;
+    --space-5: 4rem;
+    --radius: 14px;
+    --maxw: 72rem;
+  
+    /* Motion */
+    --speed: 0.25s;
+    --ease: ease;
+  }

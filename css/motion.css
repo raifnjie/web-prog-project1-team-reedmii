@@ -1,0 +1,50 @@
+/* ===== TRANSITIONS (always on, tiny and safe) ===== */
+.card, .btn, .nav-list a, .checkpoint {
+    transition: transform var(--speed) var(--ease),
+                box-shadow var(--speed) var(--ease),
+                background-color var(--speed) var(--ease),
+                border-color var(--speed) var(--ease),
+                color var(--speed) var(--ease);
+  }
+  
+  /* ===== TRANSFORMS (not top/margin, so the layout never shifts) ===== */
+  .card:hover, .card:focus-within { transform: translateY(-6px) scale(1.02); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45); }
+  .btn:hover, .btn:focus-visible { transform: translateY(-2px); }
+  .badge { transition: transform var(--speed) var(--ease); }
+  .badge:hover { transform: rotate(-6deg); }
+  .hero-emblem { transition: transform var(--speed) var(--ease); }
+  .hero-emblem:hover { transform: rotate(15deg); }
+  
+  /* ===== KEYFRAME ANIMATIONS (only when the user allows motion) ===== */
+  @media (prefers-reduced-motion: no-preference) {
+    /* 1. Route progress: the checkpoint line draws downward */
+    .timeline::before { animation: route-draw 1.6s var(--ease) both; }
+    @keyframes route-draw {
+      from { transform: scaleY(0); }
+      to { transform: scaleY(1); }
+    }
+  
+    /* 2. Active checkpoint pulse: the current marker gently grows and shrinks */
+    .is-active .marker { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.18); }
+    }
+  
+    /* 3. Hero emblem float */
+    .hero-emblem { animation: float 6s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  }
+  
+  /* ===== REDUCED MOTION: static fallback ===== */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation: none !important;
+      transition-duration: 0.01ms !important;
+    }
+    .card:hover, .card:focus-within, .btn:hover, .badge:hover, .hero-emblem:hover { transform: none; }
+  }

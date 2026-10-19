@@ -1,0 +1,53 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  margin: 0 0 var(--space-2);
+}
+h1 { font-size: var(--fs-h1); color: var(--gold); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+p { margin: 0 0 var(--space-2); }
+img, svg { max-width: 100%; height: auto; }
+
+a { color: var(--teal); text-underline-offset: 3px; }
+
+/* Visible focus for everything interactive */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: var(--space-2);
+  top: -5rem;
+  background: var(--gold);
+  color: var(--on-accent);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 8px;
+  font-weight: 700;
+  z-index: 100;
+}
+.skip-link:focus { top: var(--space-1); }
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--space-2);
+}
+section { padding-block: var(--space-4); }

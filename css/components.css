@@ -1,0 +1,140 @@
+/* ===== HEADER / NAV ===== */
+.site-header {
+    background: var(--surface);
+    border-bottom: 2px solid var(--line);
+  }
+  .site-header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding-block: var(--space-2);
+  }
+  .brand {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-decoration: none;
+  }
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-list a {
+    display: block;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    color: var(--text);
+    text-decoration: none;
+    border: 2px solid transparent;
+  }
+  .nav-list a:hover { background: var(--surface-2); border-color: var(--line); }
+  .nav-list a[aria-current="page"] {
+    background: var(--gold);
+    color: var(--on-accent);
+    font-weight: 700;
+  }
+  
+  /* ===== BUTTONS ===== */
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 999px;
+    background: var(--gold);
+    color: var(--on-accent);
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid var(--gold);
+  }
+  .btn:hover { background: var(--teal); border-color: var(--teal); }
+  .btn-outline { background: transparent; color: var(--gold); }
+  .btn-outline:hover { color: var(--on-accent); }
+  
+  /* ===== CARDS ===== */
+  .card {
+    background: var(--surface);
+    border: 2px solid var(--line);
+    border-radius: var(--radius);
+    padding: var(--space-3);
+  }
+  .card h3 { margin-bottom: var(--space-1); }
+  .card-link { display: inline-block; margin-top: var(--space-1); font-weight: 700; }
+  
+  /* ===== BADGES & STATUS (always icon + text, never color alone) ===== */
+  .badge, .status {
+    display: inline-block;
+    padding: 0.15rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 2px solid currentColor;
+    margin-right: 0.4rem;
+  }
+  .badge-easy { color: var(--teal); }
+  .badge-medium { color: var(--gold); }
+  .badge-hard { color: var(--danger); }
+  .status-complete { background: var(--teal); color: var(--on-accent); border-color: var(--teal); }
+  .status-active { background: var(--gold); color: var(--on-accent); border-color: var(--gold); }
+  .status-locked { background: transparent; color: var(--muted); border-style: dashed; }
+  
+  /* ===== TIMELINE (Adventure Pack route map) ===== */
+  .timeline {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 3rem;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 1.1rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 4px;
+    border-radius: 2px;
+    background: var(--line);
+    transform-origin: top;
+  }
+  .checkpoint {
+    position: relative;
+    margin-bottom: var(--space-3);
+    padding: var(--space-2);
+    background: var(--surface);
+    border: 2px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .checkpoint h3 { margin: 0.4rem 0; }
+  .checkpoint p { margin: 0; color: var(--muted); }
+  .marker {
+    position: absolute;
+    left: -3rem;
+    top: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 3px solid var(--line);
+    background: var(--bg);
+    font-weight: 700;
+  }
+  .is-complete .marker { background: var(--teal); border-color: var(--teal); color: var(--on-accent); }
+  .is-active { border-color: var(--gold); }
+  .is-active .marker { background: var(--gold); border-color: var(--gold); color: var(--on-accent); }
+  .is-locked { opacity: 0.85; border-style: dashed; }
+  
+  /* ===== FOOTER ===== */
+  .site-footer {
+    background: var(--surface);
+    border-top: 2px solid var(--line);
+    padding-block: var(--space-3);
+    margin-top: var(--space-4);
+  }
+  .site-footer ul { list-style: none; display: flex; flex-wrap: wrap; gap: var(--space-2); padding: 0; margin: 0 0 var(--space-1); }
+  .site-footer p { color: var(--muted); margin: 0; }

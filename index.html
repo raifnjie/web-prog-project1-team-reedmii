@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quest Explorer | Home</title>
+  <meta name="description" content="Quest Explorer is a fun adventure world you explore region by region.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Quest Explorer</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="map.html">World Map</a></li>
+          <li><a href="mission.html">Mission Detail</a></li>
+          <li><a href="about.html">Team/About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="stack">
+          <h1 id="hero-title">Begin Your Quest</h1>
+          <p class="lead">The realm of Aeloria is fading. Cross its regions, finish missions, and light every checkpoint on the road to the Crystal Spire.</p>
+          <a class="btn" href="map.html">Begin Your Quest</a>
+        </div>
+        <svg class="hero-emblem" viewBox="0 0 100 100" role="img" aria-label="Golden compass emblem">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="4"/>
+          <polygon points="50,12 58,50 50,88 42,50" fill="currentColor"/>
+          <polygon points="12,50 50,42 88,50 50,58" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="50" cy="50" r="5" fill="#14121f"/>
+        </svg>
+      </div>
+    </section>
+
+    <section aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">What awaits you</h2>
+        <div class="features">
+          <article class="card">
+            <h3>World Map</h3>
+            <p>Compare regions by difficulty and status, then choose your path.</p>
+            <a class="card-link" href="map.html">Open the map</a>
+          </article>
+          <article class="card">
+            <h3>Missions</h3>
+            <p>Read objectives and rewards before you set out.</p>
+            <a class="card-link" href="mission.html">View a mission</a>
+          </article>
+          <article class="card">
+            <h3>Checkpoint Route</h3>
+            <p>Follow the route map and see which checkpoints are complete, active, or locked.</p>
+            <a class="card-link" href="mission.html#route">See the route</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="map.html">World Map</a></li>
+          <li><a href="mission.html">Mission Detail</a></li>
+          <li><a href="about.html">Team/About</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 Quest Explorer | Web Programming | Project 1</p>
+    </div>
+  </footer>
+</body>
+</html>
